@@ -1,0 +1,47 @@
+#include <stdio.h>
+int main()
+{
+    float bp,b,t,n;
+    printf("ENTER YOUR BASIC PAY: ");
+    scanf("%f",&bp);
+    if(bp>=0 && bp<=1000)
+    {
+        b=bp*2/100;
+        t=bp*1/100;
+        printf("BONUS= %f",b);
+        printf("TRAVEL ALLOWENCE= %f",t);
+    }
+    else if(bp>=10000 && bp<=25000)
+    {
+        b=bp*5/100;
+        t=bp*2/100;
+        printf("BONUS= %f",b);
+        printf("TRAVEL ALLOWENCE= %f",t);
+    }
+    else if(bp>=25000 && bp<=50000)
+    {
+        b=bp*10/100;
+        t=bp*3/100;
+        printf("BONUS= %f",b);
+        printf("TRAVEL ALLOWENCE= %f",t);
+    }
+    else if(bp>=50001 && bp<=100000)
+    {
+        b=bp*15/100;
+        t=bp*5/100;
+        printf("BONUS= %f",b);
+        printf("TRAVEL ALLOWENCE= %f",t);
+    }
+    else if(bp>100000)
+    {
+        b=bp*20/100;
+        t=bp*5/100;
+        printf("BONUS= %f",b);
+        printf("TRAVEL ALLOWENCE= %f",t);
+    }
+    n=bp+b+t;
+    printf("\nTHE NET SALARY IS:%f",n);
+    return 0;
+}
+    
+   
