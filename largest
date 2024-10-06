@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int p,q;
+    printf("ENTER TWO INTEGERS: ");
+    scanf("%d%d",&p,&q);
+    if(p>q)
+    {
+        printf("THE FIRST ENTERED INTEGER IS THE LARGEST.");
+    }
+    else
+    {
+        printf("THE SECOND ENTERED INTEGER IS THE LARGEST."); 
+    }
+    return 0;
+}
