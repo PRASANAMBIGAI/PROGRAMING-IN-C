@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int t,e,m,ss,s,tot,all;
+    printf("\nENTER TAMIL MARK: ");
+    printf("\nENTER ENGLISH MARK: ");
+    printf("\nENTER MATHEMATICS MARK: ");
+    printf("\nENTER SOCIAL SCIENCE MARK: ");
+    printf("\nENTER SCIENCE MARK: ");
+    scanf("%d%d%d%d%d",&t,&e,&m,&ss,&s);
+    tot=t+e+m+ss+s;
+    printf("\nTOTAL MARKS: %d",tot);
+     if((t==e==m==ss==s)<=50)
+    {
+       printf("\n THE STUDENT HAS not PASSED THE EXAM "); 
+    }
+    else
+    {
+        printf("\n THE STUDENT HAS  PASSED THE EXAM "); 
+    }
+    return 0;
+}
+    
