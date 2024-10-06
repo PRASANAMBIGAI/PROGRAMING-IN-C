@@ -1,0 +1,45 @@
+#include <stdio.h>
+int main()
+{
+    int t,e,m,ss,s,tot;
+    float avg;
+    printf("\nENTER TAMIL MARK: ");
+    printf("\nENTER ENGLISH MARK: ");
+    printf("\nENTER MATHEMATICS MARK: ");
+    printf("\nENTER SOCIAL SCIENCE MARK: ");
+    printf("\nENTER SCIENCE MARK: ");
+    scanf("%d%d%d%d%d",&t,&e,&m,&ss,&s);
+    tot=t+e+m+ss+s;
+    avg=tot/5;
+    printf("\nTOTAL MARKS: %d",tot);
+    printf("\nAVERAGE MARKS: %f",avg);
+    if(tot>=450 && tot<=500)
+    {
+        printf("\nYOUR GRADE: \"O\" . ");
+    }
+    else if(tot>=400 && tot<=450)
+    {
+        printf("\nYOUR GRADE: \"A+\" . ");
+    }
+    else if(tot>=350 && tot<=400)
+    {
+        printf("\nYOUR GRADE: \"A\" . ");
+    }
+    else if(tot>=300 && tot<=350)
+    {
+        printf("\nYOUR GRADE: \"B+\" . ");
+    }
+    else if(tot>=250 && tot<=300)
+    {
+        printf("\nYOUR GRADE: \"B\" . ");
+    }
+    else if(tot<250)
+    {
+        printf("\nYOUR GRADE: \"F\" . ");
+    }
+    else if(tot<1 && tot>500)
+    {
+        printf("\nINVALID");
+    }
+return 0;
+}
